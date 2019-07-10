@@ -82,11 +82,11 @@ public class CowsayService implements Service {
     private void getHandler(ServerRequest request, ServerResponse response) {
 
         String message = request.queryParams().first("message").orElse("Moo!");
-        String image = request.queryParams().first("image").orElse("default");
+        String cowfile = request.queryParams().first("cowfile").orElse("default");
         //System.out.println(String.format("message => %s", message));
         //System.out.println(String.format("image => %s", image));
 
-        String[] params = new String[]{"-f", image, message};
+        String[] params = new String[]{"-f", cowfile, message};
 
         Optional<String> verb = Optional.ofNullable(request.path().param("verb"));
         if(!verb.isPresent()){

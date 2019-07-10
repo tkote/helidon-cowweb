@@ -38,15 +38,18 @@ curl -X GET http://localhost:8080/cowsay/think?message=Hello
                 ||----w |
                 ||     ||
 
- curl -X GET 'http://localhost:8080/cowsay/say?message=Wow!&image=www'
+curl -X GET 'http://localhost:8080/cowsay/think?message=Wow!&cowfile=sheep'
  ______
-< Wow! >
+( Wow! )
  ------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||--WWW |
-                ||     ||
+  o
+   o
+       __     
+      UooU\.'@@@@@@`.
+      \__/(@@@@@@@@@@)
+           (@@@@@@@@)
+           `YY~~~~YY'
+            ||    ||
 ```
 
 ## Try health and metrics
