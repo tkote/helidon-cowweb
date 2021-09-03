@@ -248,7 +248,7 @@
     <repository>
       <id>github</id>
       <name>GitHub Packages</name>
-      <url>https://maven.pkg.github.com/tkote/test-repo</url>
+      <url>https://maven.pkg.github.com/tkote/helidon-cowweb</url>
     </repository>
   </distributionManagement>
 
